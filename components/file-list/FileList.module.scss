@@ -1,0 +1,10 @@
+.file_list {
+  @apply grid grid-cols-4 my-14 gap-8;
+
+  @media (max-width: 1600px) {
+    @apply grid-cols-3;
+  }
+  @media (max-width: 1300px) {
+    @apply grid-cols-2;
+  }
+}

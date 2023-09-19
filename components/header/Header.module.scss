@@ -1,0 +1,34 @@
+.header {
+  @apply flex  mt-12 container mx-auto justify-between h-max;
+  .search {
+    width: 100%;
+    max-width: 450px;
+
+    @apply relative flex;
+    svg {
+      @apply absolute top-3 left-4;
+    }
+    input {
+      width: 100%;
+      @apply p-2 pl-14 border-none focus:outline-none focus:ring rounded-lg bg-light-gray text-text-gray text-lg;
+    }
+  }
+  .header_left {
+    @apply flex gap-8 relative;
+    .button {
+      @apply relative inline-block ms-8;
+      span {
+        @apply relative flex cursor-pointer outline-none bg-blue rounded-lg text-white p-3;
+        svg {
+          @apply mr-2;
+        }
+      }
+      input[type="file"] {
+        @apply absolute  block w-0 h-0;
+      }
+    }
+    .avatar {
+      @apply cursor-pointer bg-gray border border-light-hard-gray w-12 h-12 rounded-full flex justify-center items-center text-light-hard-gray text-lg;
+    }
+  }
+}

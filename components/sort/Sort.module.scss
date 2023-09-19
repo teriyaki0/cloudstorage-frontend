@@ -1,0 +1,24 @@
+.sort {
+  @apply flex justify-between text-text-gray mt-12 text-center text-lg;
+  .types {
+    @apply flex gap-8 items-center;
+    .type {
+      @apply cursor-pointer text-xl;
+      &.active {
+        @apply text-blue border-b border-b-blue;
+      }
+    }
+  }
+  .sort_by {
+    @apply flex gap-2 items-center relative;
+    .popup {
+      @apply p-2 w-28 rounded-lg border-light-gray border cursor-pointer;
+    }
+    .module {
+      @apply absolute top-14 bg-gray px-2 right-0 flex flex-col items-start rounded-lg border-light-gray border;
+    }
+    span {
+      @apply p-2 cursor-pointer;
+    }
+  }
+}

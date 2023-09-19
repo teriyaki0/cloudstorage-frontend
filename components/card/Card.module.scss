@@ -1,0 +1,28 @@
+.card {
+  max-width: 270px;
+  width: 100%;
+  @apply bg-gray p-6 rounded-md text-text-gray h-80 flex flex-col justify-between;
+  .card_top {
+    @apply flex justify-between mb-4;
+    span {
+      @apply cursor-pointer;
+    }
+  }
+  .card_bottom {
+    width: 200px; /* Ширина контейнера */
+
+    white-space: nowrap; /* Текст не переносится на новую строку */
+    overflow: hidden; /* Обрезаем текст, который выходит за пределы контейнера */
+    text-overflow: ellipsis;
+    @apply flex flex-col my-2;
+    span {
+      display: inline-block; /* Обязательно использовать для применения свойств обрезания текста */
+    }
+  }
+  .card_center {
+    @apply flex flex-col items-center;
+    .format {
+      @apply text-lg font-bold mb-1 mt-2;
+    }
+  }
+}

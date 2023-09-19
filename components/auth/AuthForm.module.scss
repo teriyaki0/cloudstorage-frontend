@@ -1,0 +1,34 @@
+.auth {
+  @apply flex justify-center items-center h-screen;
+  .form {
+    max-height: 550px;
+    height: 100%;
+    @apply flex flex-col bg-gray w-96 rounded-lg;
+    .container {
+      @apply flex flex-col px-12 h-full justify-between;
+      div {
+        @apply flex flex-col;
+        .input {
+          @apply p-2 rounded-md border-none;
+        }
+
+        .title {
+          @apply text-white text-2xl my-3 mt-10;
+        }
+
+        .label {
+          @apply mt-4 my-2 text-text-gray flex justify-between;
+        }
+      }
+      .footer {
+        @apply mb-7;
+        .button {
+          @apply bg-blue mt-10 p-2 rounded-lg text-white;
+        }
+        span {
+          @apply text-text-gray mt-5 text-center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.file_detail {
+  @apply relative;
+  .content {
+    width: 450px;
+
+    @apply fixed  bg-gray p-8;
+  }
+}
